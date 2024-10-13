@@ -31,7 +31,7 @@ export default async function handler(req, res) {
         const conversation = await model.startChat({
           history: [
             { role: 'user', parts: [`Content: ${content}`] },
-            { role: 'user', parts: ["Put all your answers to the following questions in this format: ALOHA{answer 1, answer 2, etc}"] },
+            { role: 'user', parts: ["Put all your answers to the following questions in this format: ALOHA{answer 1;;; answer 2;;; etc}"] },
             { role: 'user', parts: [question] }
           ],
           generationConfig: { maxOutputTokens: 300 },
