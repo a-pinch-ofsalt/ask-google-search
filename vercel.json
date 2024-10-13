@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "functions": {
+      "api/answer.js": {
+        "runtime": "nodejs14.x"
+      }
+    },
+    "routes": [
+      {
+        "src": "/api/answer",
+        "dest": "/api/answer.js"
+      }
+    ]
+  }
+  
